@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&family=Ubuntu:wght@300&display=swap');
 
 :root {
-    --main-color: #8e44ad;
+    --main-color: #1e2fb2;
+    /*#8e44ad */
     --black: #222;
     --white: #ffffff;
     --light-black: #777;
@@ -93,16 +94,20 @@ section {
     z-index: 1000;
     background-color: var(--white);
     display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    /* this two line changed-----------------=======================================================*/
+    padding-bottom: 1rem;
     box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
 }
 
-.header .logo {
-    font-size: 2rem;
-    color: var(--black);
+.header .logo img {
+    height: 50px;
+    width: 130px;
+    /*  this line changed ------------------- ========================================================*/
+    /* font-size: 2rem;
+    color: var(--black); */
 }
 
 .header .navbar a {
@@ -251,6 +256,10 @@ section {
     background: var(--white);
 }
 
+.home-packages .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
 .home-packages .box-container .box .image {
     height: 25rem;
     overflow: hidden;
@@ -369,7 +378,7 @@ section {
 .services .box-container .box h3 {
     color: var(--white);
     font-size: 1.7rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 /* services section css end  ----------------------------*/
@@ -452,9 +461,11 @@ section {
     box-shadow: var(--box-shadow);
     user-select: none;
 }
-.reviews .slide .stars{
+
+.reviews .slide .stars {
     padding-bottom: .5rem;
 }
+
 .reviews .slide .stars i {
     font-size: 1.7rem;
     color: var(--main-color);
@@ -485,8 +496,160 @@ section {
     margin-top: 1rem;
 }
 
+.reviews .swiper h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* this style add -=================================================================================== */
+/*about section style start  */
+.about-content {
+    text-align: center;
+}
+
+.about-content .content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.about-content .content h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.about-content .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+/*sbout section style end  */
 
 /* about page css end ------------------------------- */
+
+/* package page css start ----------------------------*/
+
+
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.packages .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6) {
+    display: inline-block;
+}
+
+.packages .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.packages .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+}
+
+.packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.packages .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.packages .box-container .box .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.packages .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* package page css end ----------------------------*/
+
+
+
+
+
+
+
+/* book page css start  */
+.booking .book-form {
+    padding: 2rem;
+    background: var(--dark-bg);
+}
+
+.booking .book-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox {
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.booking .book-form .flex .inputBox input:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder {
+    color: var(--light-white);
+}
+
+.booking .book-form .flex .inputBox span {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.booking .book-form .btn {
+    margin-top: 2rem;
+}
+
+/* book page css end  */
+
+
 
 
 
@@ -570,6 +733,11 @@ section {
 }
 
 @media (max-width:768px) {
+
+    .heading h1 {
+        font-size: 4rem;
+    }
+
     #menu-btn {
         display: inline-block;
         transition: .2s linear;
@@ -599,6 +767,11 @@ section {
         display: block;
         margin: 2rem;
         text-align: center;
+    }
+
+    /* this section add================================ */
+    .reviews .swiper h3 {
+        font-size: 2.5rem;
     }
 }
 
