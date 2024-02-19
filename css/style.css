@@ -89,7 +89,7 @@ section {
 /* what's up css start  */
 .whatsapp-style {
     position: fixed;
-    bottom: 15px;
+    bottom: 20px;
     right: 5px;
     text-align: right;
     z-index: 1000;
@@ -956,6 +956,10 @@ textarea {
 
     .heading-title {
         font-size: 3.5rem;
+    }
+
+    .whatsapp-style {
+        bottom: 5px;
     }
 
     .whatsapp-style .whatsapp-img {
