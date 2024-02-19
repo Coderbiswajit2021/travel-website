@@ -237,6 +237,66 @@ section {
 /* home about section end  */
 
 
+/* easy book css start  */
+
+.easy-book {
+    background: var(--dark-bg);
+}
+
+.easy-book .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.easy-book .box-container .box:hover {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+/* .easy-book .box-container .box:hover .image img {
+    transform: scale(1.1);
+} */
+
+.easy-book .box-container .box .icon-image {
+    height: 17rem;
+}
+
+.easy-book .box-container .box .icon-image .icon-allign {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.easy-book .box-container .box .icon-image i {
+    font-size: 7rem;
+}
+
+.easy-book .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.easy-book .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.easy-book .box-container .box .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.easy-book .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* easy book css end  */
+
+
 
 
 /* home package section start  */
@@ -397,6 +457,10 @@ section {
     gap: 3rem;
 }
 
+.about {
+    background: var(--dark-bg);
+}
+
 .about .image {
     flex: 1 1 41rem;
 }
@@ -420,6 +484,7 @@ section {
     color: var(--light-black);
     line-height: 2rem;
     padding: 1rem 0;
+    text-align: justify;
 }
 
 .about .content .icons-container {
@@ -431,7 +496,7 @@ section {
 }
 
 .about .content .icons-container .icons {
-    background: var(--dark-bg);
+    background: var(--white);
     padding: 2rem;
     flex: 1 1 16rem;
 }
