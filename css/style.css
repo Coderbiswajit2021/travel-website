@@ -89,7 +89,7 @@ section {
 /* what's up css start  */
 .whatsapp-style {
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     right: 5px;
     text-align: right;
     z-index: 1000;
