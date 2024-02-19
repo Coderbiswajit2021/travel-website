@@ -85,6 +85,35 @@ section {
     background: var(--main-color);
 }
 
+
+/* what's up css start  */
+.whatsapp-style {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    text-align: right;
+    z-index: 1000;
+}
+
+.whatsapp-style .whatsapp-img {
+    width: 5%;
+}
+
+.call-style {
+    position: fixed;
+    bottom: 75px;
+    right: 5px;
+    text-align: right;
+    z-index: 1001;
+}
+
+.call-style .call-img {
+    width: 12%;
+}
+
+/* what's up css end  */
+
+
 /* header section start  ------------------------------*/
 .header {
     position: sticky;
@@ -909,6 +938,15 @@ textarea {
     .reviews .swiper h3 {
         font-size: 2.5rem;
     }
+
+    .call-style {
+        bottom: 65px;
+    }
+
+    .call-style .call-img {
+        width: 9%;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -918,5 +956,17 @@ textarea {
 
     .heading-title {
         font-size: 3.5rem;
+    }
+
+    .whatsapp-style .whatsapp-img {
+        width: 13%;
+    }
+
+    .call-style {
+        bottom: 65px;
+    }
+
+    .call-style .call-img {
+        width: 12%;
     }
 }
