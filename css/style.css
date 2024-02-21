@@ -266,6 +266,118 @@ section {
 /* home about section end  */
 
 
+/* carinfo section start  */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.services-container .box {
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.services-container .box .box-img {
+    width: 100%;
+    height: 250px;
+}
+
+.services-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.services-container .box-details h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+
+
+.services-container .box-details h1 {
+    padding: 15px;
+}
+
+.services-container .box-details {
+    background: var(--dark-bg);
+    color: var(--black);
+    margin-top: 5px;
+    border-radius: 0.5rem;
+}
+
+.btn-1 {
+    display: inline-block;
+    width: 100%;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-1:hover {
+    background: var(--main-color);
+}
+
+.heading-1 h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    /* text-transform: uppercase; */
+    color: var(--black);
+}
+
+/* carinfo section end  */
+
+
+
+/* price details start  */
+.price-details ol {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    text-align: inherit;
+    line-height: inherit;
+    padding-inline-start: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.price-details li {
+    font-size: 1.5rem;
+    margin: 8px;
+}
+.price-details h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    /* text-transform: uppercase; */
+    color: var(--black);
+}
+
+/* price details end  */
+
+
+
+
+
+
+
+
+
+
+
 /* easy book css start  */
 
 .easy-book {
@@ -652,8 +764,8 @@ section {
 }
 
 .reviews .slide img {
-    height: 7rem;
-    width: 7rem;
+    height: 9rem;
+    width: 9rem;
     border-radius: 50%;
     margin-top: 1rem;
 }
